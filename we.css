@@ -1,0 +1,2526 @@
+/* CSS TABLE OF CONTENTS 
+
+1. RESET
+2. TEXT
+3. 960
+4. SITE STYLES
+    i)      ALL PAGES
+    ii)     MEGA-NAV + MENU
+    iii)    SLIDER
+    iv)     TWITTER
+    v)      SPRYTABS
+    vi)     IE 
+5. PRINT
+6. MOBILE
+
+/* `XHTML, HTML4, HTML5 Reset ----------------------------------------------------------------------------------------------------*/
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0}html,body{height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:700}img{color:transparent;vertical-align:middle;-ms-interpolation-mode:bicubic}ol,ul{list-style:none}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:400;vertical-align:top;text-align:left}q{quotes:none}q:before,q:after{content:none}sub,sup{line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}svg{overflow:hidden}
+
+/***** END OF RESET ***********/
+
+/******** START OF TEXT **********/
+
+.western{font:14px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif}pre,code{font-family:'DejaVu Sans Mono', Menlo, Consolas, monospace}hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}li{margin-left:30px}p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset,figure{margin-bottom:20px}
+
+/************ END OF TEXT **********/
+
+/*********** START OF 960 ************/
+
+/************ SITE STYLES BEGIN HERE **************/
+
+
+/************* ALL PAGES ********************/
+.western {
+    background: #eee;
+    color: #333;
+    font-size: 14px;
+    height: auto;
+    padding-bottom: 20px;
+    }
+
+
+
+.western p {
+    text-align: left;
+    }
+
+.western h1 {
+    color: #4F2683;
+    font-size: 140%;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0px 0 25px 0;
+    clear: both;
+    }
+
+.western h2 {
+    color: #4e2583;
+    font-size: 130%;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    }
+
+.western h3 {
+    color: #4e2583;
+    font-size: 120%;
+    letter-spacing: 0.3px;
+    margin: 5px 0 10px 0px;
+    padding: 5px 5px 5px 0px;
+    line-height: 1.4em;
+    }
+
+.western h4 {
+    color:#4e2583;
+    font-size: 110%;
+    margin-bottom: 5px;
+    font-weight:400;
+    }
+
+.western a {
+    color: #015b86;
+    text-decoration: none;
+    }
+    
+western a:hover {
+    color:#029feb;
+    }
+    
+.western img {
+    border: 0;
+}
+
+.western ul, li { 
+    line-height:21px;
+    margin: 0;
+    color: #333333;
+}
+
+.western ol {
+    line-height:21px;
+    margin: 0;
+    color: #333333;
+    list-style-type: decimal;
+}
+
+.western hr {
+    margin: 10px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+.western .numberedlist {
+    margin: 0px 0px 20px 60px;
+}
+.western .squarelist {
+    list-style-type: square;
+    margin: 0px 0px 20px 60px;
+}
+
+.western .squarelist ul li {
+    list-style-type: disc;
+    margin: 0px 0px 0px 30px;
+}
+
+.western .numberedlist ol li {
+    list-style-type: lower-roman;
+    margin: 0px 0px 0px 30px;
+}
+
+.image {
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    }
+
+.breadcrumbs {
+    color: #777;
+    text-align: left;
+    margin: 0 0 10px;
+    padding-top: 0px;
+    float:left;
+    clear: both;
+    display: block; 
+    line-height: 15px;
+}
+.breadcrumbs li {
+    background: url(http://www.uwo.ca/web_standards/img/icn/paper-transp-blue.png) no-repeat scroll right 1px;
+    color: #666666;
+    display: block;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    padding-right: 18px;
+    font-size: 80%;
+}
+.breadcrumbs li.last {
+    background: none repeat scroll 0 0 transparent;
+    margin-right: 0;
+    padding-right: 0;
+}
+.breadcrumbs li a {
+    color: #807f83;
+    display: block;
+    float: left;
+    line-height: 15px; 
+    text-decoration:none;
+}
+.breadcrumbs li a:hover {
+    color: #029feb;
+    text-decoration:underline;
+}
+
+.western #ribbon {
+    padding: 2px;
+    background-color: #4e2583;
+    margin-bottom: 50px;
+}
+
+.western #ribbon-inner {
+    margin: 0 auto;
+    padding-left: 20px;
+    }
+
+.western #ribbon-inner ul{
+    width: 960px;
+    margin: 0 auto;
+    }
+
+.western #ribbon-inner li {
+    display: block;
+    float: left;
+    margin-top: 8px;
+    padding: 0;
+    color: #dcdcdc;
+    }
+    
+.western #ribbon-inner li.up {
+    display: block;
+    float: left;
+    margin-top: 6px;
+    padding: 0px 8px 0px 8px;
+    text-shadow: 1px 1px 1px #fff;
+    color: #999;
+    }
+
+.western #ribbon-inner  li a {
+    color: #015b86;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    }
+
+.western #ribbon-inner li a:hover {
+    color: #029feb;
+    }   
+    
+.western #sitesofinterest {
+    width: 220px;
+    }
+    
+.grid_3 li {
+    margin: 0;
+    padding: 7px 0;
+    line-height: 1.4em;
+    color: #333;
+    }
+    
+.western #featurestory {
+    border-top: 1px solid #bbb;
+    padding-top: 10px;
+    }
+    
+.western #featurestory .datestamp {
+    font-weight: normal;
+    color: #666;
+    font-size: 90%;
+    }
+
+.western #tweet {
+    font-size: 80%;
+    }
+    
+.western #footer {
+    background: #4e2583;
+    margin-top: 20px;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    font-size: 80%;
+    }
+    
+.western #footer p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    }
+    
+.western #footer a {
+    color: #fff;
+    }
+    
+.western #footer a:hover {
+    color: #ddd;
+    }
+
+.western #footer-logo {
+     margin-left: 70px;
+     margin-top: 5px;
+     }
+    
+.footer-logos {
+        display:inline;
+        float:left;
+     margin-top: 10px;
+     margin-left: 30px;
+     }
+     
+.copyright {
+    font-weight: bold;
+}
+
+.footernavtitles {
+    color: #fff;
+    font-weight: bold;
+}
+
+.western div.panelbck {
+    background: #eeeeee;
+    -webkit-box-shadow: inset 0 -8px 6px -6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 -8px 6px -6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 -8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+    
+.western div.panel {
+    padding: 10px 0px 30px 0px;
+    margin:0px auto;
+    text-align:left;
+    height:130px;
+    display:none; 
+    width: 960px;
+    }
+
+.western div.panel ul {
+    float:right;
+    margin-top:0px;
+    margin-left: 0px;
+    border-right: dotted #ccc 1px;
+}
+
+.western div.panel li a { 
+    line-height: 10px;
+    padding: 0 20px;
+    color:#015b86;
+    margin-left:5px;
+    background-image: url(http://www.uwo.ca/web_standards/img/icn/paper-transp.png);
+    background-repeat: no-repeat;
+    background-position: 6px 0px;
+    }
+    
+.western div.panel li a:hover { 
+    color:#029feb;
+    text-decoration:underline;
+    }
+    
+.western #selected {
+    font-weight: bold;
+    border: 0;
+    padding-top: 3px;
+    }
+
+.western div.calendarcontainer {
+    width: 220px;
+    display: inline;
+    float: left; 
+    border-left: 1px solid #eee; 
+    border-right: 1px solid #eee; 
+    padding-left: 20px; 
+    margin-left: 10px; 
+    margin-right: 20px; 
+    padding-right: 20px;
+    margin-bottom:13px;
+}
+
+.western div.calendarcontainer li{
+    color: #333;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 7px 0;
+}
+
+.western div.calendarcontainer li a {
+    color: #015b86;
+    text-decoration: none;
+    }
+    
+div.calendarcontainer li a:hover {
+    color:#029feb;
+    }
+    
+#random-fact {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #A5A5A5;
+    box-shadow: 1px 1px 1px #FFFFFF, 0 0 6px #B0B0B0 inset;
+    font-family: Arial,sans-serif;
+    padding: 15px;
+    position: relative;
+    margin-left:0px;
+    }
+
+.grey-box {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #A5A5A5;
+    box-shadow: 1px 1px 1px #FFFFFF, 0 0 6px #B0B0B0 inset;
+    font-family: Arial,sans-serif;
+    padding: 15px;
+    position: relative;
+    margin-left:0px;
+    margin-bottom:10px;
+    }
+
+.grey-box li {
+     margin-left: 15px;
+}
+
+.title-bar-grey {
+    background: #eee;
+    padding: 7px 0 7px 10px;
+    border-bottom: 1px #bbb solid;
+    text-transform: uppercase;
+    }
+    
+.title-bar-purple {
+    padding: 7px 0 7px 10px;
+    text-transform: uppercase;
+    border-bottom: 1px #bbb solid;
+    color: #fff;
+    background: #4e2583;
+    }
+    
+
+#flipjar {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.flip {
+    float:right;
+    background-image: url("http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    border-top: 0 solid #521e82;
+    padding-bottom: 12px;
+    cursor: pointer;
+    }
+
+.flip:hover {
+    transition: border-top-width 0.2s linear 0s;
+    -moz-transition: border-top-width 0.2s linear 0s;
+    -webkit-transition: border-top-width 0.2s linear 0s;
+    -o-transition: border-top-width 0.2s linear 0s; 
+    -ms-transition: border-top-width 0.2s linear 0s;
+    border-top-width: 5px; 
+}
+
+a.homelink {
+    float: right;
+    padding:7px 6px;
+    font-weight: 15px;
+}
+
+div.lists {
+    float: right;
+    margin-top: 50px;
+}
+
+.newslist li {
+    border-top: 1px solid #ddd;
+    padding: 7px;
+    padding-left: 7px;
+    background: transparent; 
+    margin-bottom: 5px;
+    }
+
+.newslist li a  {
+    color: #015b86;
+    }
+
+.newslist li a:hover {
+    color: #029feb;
+    }
+    
+.teamgrid {
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #eee;
+    }
+    
+.teamgrid .headshot {
+    float: left;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    width: 17%;
+    }
+
+.teamgrid .infoleft {
+    padding: 20px;
+    float: left;
+    width: 42%;
+}
+
+.teamgrid .inforight {
+    padding: 20px;
+    float: right;
+    width: 25%;
+}
+
+.teamgrid h3 {
+    margin: 0;
+    padding: 0;
+}
+    
+/*  INFO TEMPLATE   */
+    
+#content-right {
+    width: 699px;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+
+#content-left {
+    width: 699px;
+}
+    
+.social-icon {
+     float: left;
+     margin-right: 7px;
+     margin-top: 0px;
+     background: none;
+     }
+     
+#western-logo-right {
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    }
+
+#faculty-logo-left {
+    margin: 10px;
+    margin-bottom: 20px;
+    }
+
+#masthead {
+    width: 960px;
+    margin: auto;
+    }
+    
+#flickr {
+    margin: 0 25%;
+    }
+     
+#alert {
+    background: #f00505;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #d60505;
+    padding: 11px 0;
+    }
+
+#alert-inner {
+    color: #fff;
+    margin: auto;
+    width: 960px;
+    text-align: center;
+    }
+    
+#alert-inner a {
+    color: #fff;
+    text-decoration: underline;
+    }
+    
+/* FORM CONTROLS */
+
+.entry-rbn {
+    border: 1px solid #fff;
+    padding: 4px;
+    color: #666;
+    background-color: rgba(255, 255, 255, .6);
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 90px;
+    }
+    
+.entry-rbn-long {
+    border: 1px solid #fff;
+    padding: 4px;
+    color: #666;
+    background-color: rgba(255, 255, 255, .6);
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 194px;
+    }
+
+.formbtn-rbn {
+    background: #4f2d82;
+    border: 1px solid #4f2d82;
+    color: #fff;
+    padding: 4px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    }
+    
+.formcontrol .entry, textfield {
+    border: 1px solid #fff;
+    padding: 4px;
+    color: #666;
+    background-color: rgba(255, 255, 255, .6);
+    }
+    
+.formcontrol .formbtn {
+    background: #4f2d82;
+    border: 1px solid #4f2d82;
+    color: #fff;
+    padding: 4px 10px;
+    }
+
+/* Gulnara updates*/
+
+#left-sidebar {
+    float: left;
+    margin: 0px 10px 10px;
+    position: relative;
+    width: 210px;
+}
+
+#leftnav {
+    border-top: 1px dotted #E1E1E1;
+    margin-bottom: 20px;
+}
+#leftnav ul {
+    margin-left: 0;
+}
+#leftnav li {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px dotted #E1E1E1;
+    margin: 0;
+    padding: 0;
+}
+
+#leftnav li.current {
+    background-color: #FFFFFF;
+    border-top: 1px dotted #E1E1E1;
+    border-bottom: 1px dotted #E1E1E1;
+    color: #872c01;
+    font-weight: 500;
+    margin: -1px 0;
+}    
+
+#leftnav a {
+    color: #015b86;
+    display: block;
+    font-size: 110%;
+    letter-spacing: 0.7px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+#leftnav a:hover {
+    color: #028feb;
+    text-decoration: underline;
+}
+#leftnav a.selected {
+    background-color: #FFFFFF;
+    border-top: 1px dotted #E1E1E1;
+    border-bottom: 1px dotted #E1E1E1;
+    color: #028feb;
+    font-weight: 500;
+    margin: -1px 0;
+}
+#leftnav a.expanded {
+    font-size:90%;
+    border-width: 1px 0;
+    color: #015b86;
+    font-weight: 400;
+    margin: -1px 0;
+}
+#leftnav a.expanded {
+    margin: -1px 0 8px;
+}
+#leftnav a.selected.expanded {
+    color: #015b86;
+}
+#leftnav a span {
+    color: #999999;
+    display: block;
+    text-transform: uppercase;
+}
+#leftnav a.selected span {
+    color: #666666;
+}
+#leftnav ul ul {
+    margin: 0 0 5px 14px;
+}
+#leftnav li li {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+#leftnav li li a {
+    color: #015b86;
+    display: block;
+    font-size: 90%;
+    padding: 4px 10px;
+}
+#leftnav li li a:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #028feb;
+    text-decoration: underline;
+}
+#leftnav li li a.selected, #leftnav li li a.expanded {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size:90%;
+    color:#807f83;
+    font-weight: 400;
+    margin: 0;
+}
+#leftnav li li a.expanded {
+    color: #015b86;
+    margin: 0;
+}
+#leftnav li li a.selected.expanded {
+    margin: 0;
+}
+#leftnav ul ul ul {
+    margin-bottom: 0;
+}
+
+#sidebar {
+    background: none repeat scroll 0 0 #efefef;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    width: 210px;
+}
+.sidebar-title {
+    border-bottom: 3px solid #4F2683;
+    margin: 0px 10px 15px 0px;
+}
+
+#sidebar li {
+    color: #333;
+    line-height:21px;
+}
+
+
+.caption-wrapper {
+    position: absolute;
+    bottom: 13px;
+    width: 100%;
+    left: 0;
+    background-color:rgba(0,0,0,0.6);
+}
+
+.photodescription{
+    padding: 5px;
+    color: #fff;
+    margin: 0 0 0 5px;
+}
+
+/* Styling added by Travis */
+
+/************* INPUT FIELD STYLES ************/
+.red {
+    color: #FF0000;
+}
+
+#timepicker {
+    width: 70px;
+}
+
+#addresspicker {
+    width: 389px;
+}
+
+label.error { 
+    float: none; 
+    color: red; 
+    padding-left: .5em; 
+    vertical-align: top; 
+}
+
+.fields {
+    padding: 4px;
+    margin-bottom: 15px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #A5A5A5;
+}
+
+.fields.error {
+    padding: 4px;
+    margin-bottom: 15px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #FF0000;
+}
+
+.ui-datepicker-calendar span {
+    color: #015B86;
+}
+
+
+/* Search */
+
+.search {
+    float: right; 
+    padding-top: 25px; 
+    margin-right: 10px;
+}
+
+#searchfield {
+    border: 1px solid #fff; 
+    padding: 4px; 
+    background-color: rgba(255, 255, 255, .6);
+    font-size: 130%;
+}   
+
+.search_btn {
+    background: #ccc;
+    color: #666;
+    padding: 3px 10px;
+    font-size: 130%;
+    cursor: pointer;
+}
+
+#department-searchfield {
+    border: 1px solid #666; 
+    padding: 4px; 
+    font-size: 90%;
+    color: #666666; 
+    background: #eee;
+    width: 180px;
+}
+
+.department-search {
+    float: right;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.department-search_btn {
+    background: #ccc;
+    color: #666;
+    padding: 3px 2px;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+.hidden {
+    display: none;
+}
+
+/* Logo */
+
+img.logo_img {
+    margin: 0px 10px 20px 10px;
+}
+
+img.tabrss {
+    float:right; 
+    margin-top: 13px; 
+    margin-right: 5px; 
+    background:none;
+}
+
+img.tabpgimg {
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    float: left; 
+    width: 140px; 
+    margin-right: 20px; 
+    margin-top: 10px;
+}
+
+div#featurestory h2 {
+    margin-bottom: 0;
+}
+
+#header {
+    padding: 0px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#header-overlay {
+    background: rgba(255, 255, 255, 0.8);
+    left: 0px;
+    bottom: 0px;
+    display: inline;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    height: auto; 
+    margin-bottom: 13px;
+}
+
+.header-name {
+    color: #4f2683;
+    display: block;
+    font-size: 180%;
+    font-weight: 500;
+    line-height: 1.125em;
+    height: auto;
+    position: relative;
+    min-width: 200px;
+    width: auto;
+}
+
+img.newsimg {
+    float: left; 
+    margin-right: 15px;
+}
+
+img.whatsonrss {
+    float:right; 
+    margin-top: 12px; 
+    margin-right: 12px;
+}
+
+#random-images {
+    margin: 0;
+    width: 220px;
+    display: inline;
+    float: left;
+    padding: 0;
+}
+
+div.ribboninputcontainer {
+    border-right:1px #888; 
+    padding: 10px 0;
+    display: inline;
+    float: left;
+}
+
+.image-right {
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+}
+
+.image-center {   
+    display: block;   
+    margin-left: auto;   
+    margin-right: auto;
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat; 
+}
+
+.image-left {
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+/* SECONDARY PAGE */
+
+.bodycontent {
+    display: inline;
+    margin-right: 0px;
+    width: 700px;
+    float: left;
+    margin-left: 10px;
+}
+
+.content-group {
+    background: none repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    padding: 5px;
+    margin: 0px 10px 6px 0px; /*added 6px bottom by Travis */
+    width:210px;
+    color: #333;
+}
+
+
+#menu li .blue-box li  {
+    background: url(http://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 11px #015b86;
+    border: 1px solid #AAAAAA; 
+    margin: 0 0 4px 0px;
+    padding: 4px 5px 4px 20px;
+    box-shadow:0px 0px 1px #999;
+    text-shadow:none;       
+    color:#fff;
+    font-size:13px;
+}
+#menu li .blue-box li  a {color:#fff;}
+#menu li .blue-box li:hover { 
+        background: url(http://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 11px #fff; 
+        color:#015b86;
+    border: 1px solid #AAAAAA; 
+    margin: 0 0 4px 0px;
+     padding: 4px 5px 4px 20px;
+    box-shadow:1px 0px 1px #999;
+    text-shadow:none;       
+}
+
+a.blue-box {
+    background: url(http://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 7px #015b86;
+    border: 1px solid #AAAAAA; 
+    margin: 0 0 4px 0px;
+    padding: 4px 5px 4px 20px;
+    box-shadow:0px 0px 1px #999;
+    text-shadow:none;       
+    color:#fff;
+    display: block;
+    font-size:14px;
+}
+
+a.blue-box:hover {
+    background: url(http://www.uwo.ca/web_standards/img/icn/paper-transp.png) no-repeat 5px 7px #fff; 
+    color: #029feb;
+    border: 1px solid #AAAAAA; 
+    margin: 0 0 4px 0px;
+    padding: 4px 5px 4px 20px;
+    box-shadow:1px 0px 1px #999;
+    text-shadow:none;
+    display: block;
+}
+
+
+/************ Columns ****************/
+
+div.onecolumn {
+    clear: both;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+div.left-2column {
+    float: left;
+    width: 47%;
+    display: inline;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+div.right-2column {
+    float: left;
+    width: 49%;
+    display: inline;
+    border-left: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+div.left-3column {
+    float: left;
+    width: 31%;
+    display: inline;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+div.center-3column {
+    float: left;
+    width: 31%;
+    display: inline;
+    border-left: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+div.right-3column {
+    float: left;
+    width: 31%;
+    display: inline;
+    border-left: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/************ FLEXSLIDER *******************/
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+ul.slides h3 {margin:0;padding:0;}
+
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {display: block; max-height: 300px; max-width:940px;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; border: none; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0; position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+
+.flexslider img {
+      background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 13px;
+    border:none;
+    }
+
+#triple-slider.flexslider .slides img, #secondary-slider.flexslider .slides img  {
+    max-width: 205px;
+    min-width: 150px;
+}
+
+#faculty-slider.flexslider .slides img {
+    width:700px;
+    height:300px;
+}
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {padding:13px; position: absolute; width:100%; max-width:674px; left: 0; bottom: 0; background: rgba(0,0,0,.6); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 110%; line-height: 18px;}
+
+
+/* Direction Nav */
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 1; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-color: rgba(78, 37, 131, 0.8);
+    background-image: url("http://www.uwo.ca/web_standards/img/arrow-r.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 40px 40px 40px 40px;
+    display: block;
+    height: 80px;
+    left: 904px;
+    position: absolute;
+    top: 130px;
+    width: 80px;
+    z-index: 10; }
+.flex-direction-nav .flex-prev {left: -20px;
+    background-color: rgba(78, 37, 131, 0.8);
+    background-image: url("http://www.uwo.ca/web_standards/img/arrow-l.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 40px 40px 40px 40px;
+    display: block;
+    height: 80px;
+    left: -38px;
+    position: absolute;
+    top: 130px;
+    width: 80px;
+    z-index: 10;
+}
+
+#faculty-slider .flex-control-nav {
+    padding-left:570px;
+    bottom: 25px;
+}
+    
+#triple-slider .flex-direction-nav .flex-next, #secondary-slider .flex-direction-nav .flex-next {background-color: transparent;
+    background-image: url("http://www.uwo.ca/web_standards/img/arrow-right.png");
+    display: block;
+    height: 30px;
+    left: 97%;
+    position: absolute;
+    top: 32%;
+    width: 30px;
+    z-index: 10; }
+    
+#triple-slider .flex-direction-nav .flex-prev, #secondary-slider .flex-direction-nav .flex-prev {background-color: transparent;
+    background-image: url("http://www.uwo.ca/web_standards/img/arrow-left.png");
+    display: block;
+    height: 30px;
+    left: -4%;
+    position: absolute;
+    top: 32%;
+    width: 30px;
+    z-index: 10; }
+
+#secondary-slider .flex-direction-nav .flex-prev {
+    left: -11%;
+}
+
+#secondary-slider li{
+    padding:0;
+    margin:0;
+}
+     
+.flexslider:hover .flex-next {opacity: 0.8; filter:alpha(opacity=80);}
+.flexslider:hover .flex-prev {opacity: 0.8; filter:alpha(opacity=80);}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1; filter:alpha(opacity=100);}
+.flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {position: absolute; bottom: 20px; padding-left:800px}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 13px; height: 13px; display: block; background: url(http://www.uwo.ca/web_standards/flexslider/theme/bg_control_nav.png); cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a:hover { background-position: 0 -13px;}
+.flex-control-paging li a.flex-active { background-position: 0 -26px; cursor: default;}
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .active {opacity: 1; cursor: default;}
+
+#triple-slider p, #triple-slider h3, #triple-slider h4{
+    padding-right: 10%;
+}
+
+.slider-container{ width:95%;
+    margin:0px auto;
+}
+
+
+
+/***************** TWITTER FEED STYLES ************/
+
+.tweet, .query {
+    line-height: 1.5em;
+}
+
+.tweet_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: #f8f8f8;
+}
+    
+.tweet_list .awesome, .tweet_list .epic {
+    text-transform: uppercase;
+}
+        
+.tweet_list li {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    list-style-type: none;
+    color: #333;
+    font-size: 90%;
+    line-height: 1.5em;
+}
+        
+.tweet_list li a {
+    color: #015b86;
+}
+    
+.tweet_list li a:hover {
+    color: #029feb;
+}
+        
+.tweet_list .tweet_even {
+    background-color: #f5f5f5;
+}
+        
+.tweet_list .tweet_avatar {
+    padding-right: .5em;
+    float: left;
+    padding: 3px;
+    background: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+}
+        
+.tweet_list .tweet_avatar img {
+    vertical-align: middle;
+    padding: 0;
+}
+
+
+/********* SPRY TABS ************/
+
+/* SpryTabbedPanels.css - version 0.6 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+    .TabbedPanels {
+    overflow: hidden;
+    margin: 0px 10px;
+    padding: 0px;
+    clear: none;
+    width: 415px; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+    float: left;
+    margin-bottom: 13px;
+}
+
+.TabbedPanelsTabGroup {
+    margin: 0px;
+    padding: 0px;
+}
+
+.TabbedPanelsTab {
+    color: #4e2583;
+    text-transform:uppercase;
+    letter-spacing: 0.3px;
+    position: relative;
+    top: 1px;
+    float: left;
+    background-color: #eeeeee;
+    cursor: pointer;
+    width:40%;
+    height: 35px;
+    padding: 0px 10px;
+    margin: 0px 8px;
+    border-bottom: 1px solid #eee;
+    }
+    
+.TabbedPanelsTab h3 {
+    padding: 3px 5px 5px 0;
+}
+
+.TabbedPanelsTabHover {
+    background-color: #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 10px;
+    
+}
+
+.TabbedPanelsTabSelected {
+    background-color: #ffffff;
+    text-transform: uppercase;  
+    border-color: #bbb #bbb #fff #bbb;
+    border-width: 1px;
+    border-style: solid; 
+    outline: none;
+    cursor: default;
+    overflow: visible;
+}
+
+.TabbedPanelsTab a {
+    text-decoration:none;
+    color: #4f2683; 
+}
+
+.TabbedPanelsContentGroup {
+    clear: both;
+    background-color: #EEE; 
+}
+
+.TabbedPanelsContent {
+    overflow: hidden;
+    padding: 4px;
+}
+
+.TabbedPanelsContentVisible {
+    background-color: #ffffff;
+    border: solid 1px #bbb;
+}
+
+.TabbedPanels-wide {
+    clear: none;
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 0;
+    width: 690px;
+}
+
+.TabbedPanelsContent-wide {
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+/************** IE FIXES ***************/
+
+.ie7 .caption-wrapper, .ie8 .caption-wrapper, ie9 .caption-wrapper {background:#000;}
+    
+.ie9 .grey-box, .ie8 .grey-box, .ie7 .grey-box {
+    background: #eee; /* changed background for IE */
+    }
+    
+.ie9 #leftnav li, .ie8 #leftnav li, .ie7 #leftnav li {
+    display: block; /*added for internet exmplorer */
+}
+
+.ie9 #header-overlay, .ie8 #header-overlay, .ie7 #header-overlay {
+    background: #FFF;
+}
+
+/************** IE 7 STYLES *************/
+
+.ie7 div.panel {
+    height:150px; /* this */
+    width: 980px; /* this */
+    }
+    
+.ie7 div.panel li a { 
+    padding: 0 20px; /* this */
+    }
+    
+.ie7 div.ribboninputcontainer {
+    margin: 0;
+}
+
+.ie7 div#ribbon {
+    background-color: transparent;
+    padding: 0;
+    border-top: 4px solid #4F2D82;
+}
+
+.ie7 .flip {
+    margin-top: 0;
+}
+
+.ie7 .flip:hover {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    border: 0px;
+}
+
+.ie7 a.homelink {
+    padding: 5px 7px 7px 6px;
+}
+
+.ie7 #ribbon-inner {
+    margin-top: -45px;
+    float:left;
+}
+
+.ie7 #masthead {
+    margin-top:-45px;
+}
+
+.ie7 .formbtn-rbn {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 2px 0px;
+}
+
+.ie7 .search_btn {
+    margin-left: -40px;
+    padding: 0px;
+}
+
+.ie7 .grey-box {
+    background: #eee; /* changed background for IE */
+    margin-left: 10px; /* this */
+    }
+
+.ie7 #searchfield {
+    border: 1px solid #dcdcdc;
+    color: #666666;
+    font-size: 130%;
+    margin-left: 10px;
+}
+
+
+.ie7 .search {
+    padding:0;
+    float:right;
+    margin-top: -65px;
+}
+
+.ie7 div#main-slider {
+    margin-bottom: -35px;
+}
+
+.ie7 .feedback {
+    display: none;
+}
+
+
+/******* IE FLEXSLIDER FIX **********/
+
+.ie9 .flexslider li img, .ie8 .flexslider li img, .ie7 .flexslider li img {
+    background: none;
+    padding-bottom: 13px;
+    border:none;
+    }
+
+.ie9 .flex-direction-nav .flex-next, .ie8 .flex-direction-nav .flex-next, .ie7 .flex-direction-nav .flex-next {
+    background-image: url(http://www.uwo.ca/web_standards/img/btn/slideadvance-right.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 80px;
+    left: 906px;
+    position: absolute;
+    top: 130px;
+    width: 80px;
+    z-index: 10;}
+.ie9 .flex-direction-nav .flex-prev, .ie8 .flex-direction-nav .flex-prev, .ie7 .flex-direction-nav .flex-prev {left: -20px;
+    background-image: url(http://www.uwo.ca/web_standards/img/btn/slideadvance-left.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 80px;
+    left: -43px;
+    position: absolute;
+    top: 130px;
+    width: 80px;
+    z-index: 10;}
+    
+/** IE7 only **/
+
+.ie7 .flex-control-nav {bottom:50px;}
+
+
+
+/************* PRINT STYLES ******************/
+
+@media print {
+body {
+    background: #FFFFFF;
+    width: 960px;
+    border-top: none;
+}
+
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  box-shadow: none;
+}
+#menu {
+    display:none;
+}
+
+.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+    display:none;
+}
+#random-images {
+    display:none;
+}
+.feedback {
+display:none;
+}
+.form {
+    display:none;
+}
+.feedback .form {
+    display:none;
+}
+.breadcrumbs {
+    display: none; /* this */
+}
+#ribbon {
+    display: none; /* this */
+    }
+#ribbon a {
+    color: #000000;
+    }
+#ribbon-inner  li a {
+    color: #000000;
+    }
+
+#ribbon-inner  li a:hover {
+    color: #000000;
+    }
+#footer {
+    background: #fff;
+    }
+    
+#footer p {
+    color: #000;
+    }
+    
+#footer a  {
+    color: #000;
+    }
+    
+#footer a:hover {
+    color: #000;
+    }
+    
+div.panel {
+    display: none;
+    }
+.grey-box {
+    border: 1px solid #A5A5A5;
+    }
+input {
+    display: none;
+}
+.flip {
+    display: none;
+    }
+
+.flipdepartment {
+    display: none;
+    }
+#ribbon-inner li a {
+    color: #000000;
+    }
+#ribbon-inner li a:hover {
+    color: #000000;
+}
+img.tabrss {
+    display: none;
+}
+
+/********** MENU PRINT *************/
+#menu {
+    background: none; /* this */
+    border: none; /* this */
+}
+menu li a {
+    color: #000000; /* this */
+}
+#menu li:hover a {
+    color: #000000; /* this */
+}
+
+/************** SPRY TABS PRINT ************/
+
+.TabbedPanels {
+    clear: none;
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 0;
+    width: 415px;
+}
+
+.TabbedPanelsTab {
+    -moz-user-select: none;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    color: #4E2583;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    letter-spacing: 0.3px;
+    list-style: none outside none;
+    margin-bottom: 0;
+    margin-right: 15px;
+    margin-top: 0;
+    padding: 0 10px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    top: 1px;
+    width: 40%;
+}
+}
+
+/**************************** MOBILE STYLES ********************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media handheld, only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px), only screen
+and (min-width : 320px)
+and (max-width : 480px)
+ {
+
+/*added and (min-width : 320px) and (max-width : 480px) to adjust for android phones*/
+
+
+body {
+    background-image: none;
+  } 
+.container_12, container_16 {
+    box-shadow: none;
+}
+
+.flip {
+  margin-right: 20px;
+  }
+.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+    display:none;
+}
+
+.first, .second, .third, .fourth, .fifth {
+    display: none;
+}
+
+#menu li.drop {
+    background-image: none;
+}
+
+#random-images {
+    display: none;
+}
+
+div.calendarcontainer {
+    border-right: none;
+    width: 43%;
+    margin-right: 0px;
+    padding-right: 0px; 
+}
+
+#TabbedPanels1 {
+    width: 50%;
+}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+
+.flip {
+  margin-right: 20px;
+  }
+.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+    display:none;
+}
+
+
+}
+
+
+
+
+/*!
+ * jQuery UI CSS Framework 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/*!
+ * jQuery UI CSS Framework 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Arial&fwDefault=normal&fsDefault=1.1em&cornerRadius=0px&bgColorHeader=4f2683&bgTextureHeader=02_glass.png&bgImgOpacityHeader=20&borderColorHeader=a5a5a5&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=efefef&bgTextureContent=03_highlight_soft.png&bgImgOpacityContent=75&borderColorContent=a5a5a5&fcContent=333333&iconColorContent=4f2683&bgColorDefault=ffffff&bgTextureDefault=01_flat.png&bgImgOpacityDefault=75&borderColorDefault=a5a5a5&fcDefault=015b86&iconColorDefault=015b86&bgColorHover=4f2683&bgTextureHover=01_flat.png&bgImgOpacityHover=0&borderColorHover=028feb&fcHover=ffffff&iconColorHover=028feb&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=20&borderColorActive=028feb&fcActive=028feb&iconColorActive=028feb&bgColorHighlight=aee3ff&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=20&borderColorHighlight=028feb&fcHighlight=015b86&iconColorHighlight=028feb&bgColorError=fef1ec&bgTextureError=05_inset_soft.png&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+ */
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: Arial; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Arial; font-size: 1em; }
+.ui-widget-content { border: 1px solid #a5a5a5; background: #efefef url(http://www.uwo.ca/web_standards/img/images/ui-bg_highlight-soft_75_efefef_1x100.png) 50% top repeat-x; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #a5a5a5; background: #4f2683 url(http://www.uwo.ca/web_standards/img/images/ui-bg_glass_20_4f2683_1x400.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #a5a5a5; background: #ffffff url(http://www.uwo.ca/web_standards/img/images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x; font-weight: normal; color: #015b86; }
+.ui-state-default a, .ui-state-default a:link { color: #015b86; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #028feb; background: #4f2683 url(http://www.uwo.ca/web_standards/img/images/ui-bg_flat_0_4f2683_40x100.png) 50% 50% repeat-x; font-weight: normal; color: #ffffff; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #ffffff; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #028feb; background: #ffffff url(http://www.uwo.ca/web_standards/img/images/ui-bg_glass_20_ffffff_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #028feb; }
+.ui-state-active a, .ui-state-active a:link { color: #028feb; text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #028feb; background: #aee3ff url(http://www.uwo.ca/web_standards/img/images/ui-bg_glass_20_aee3ff_1x400.png) 50% 50% repeat-x; color: #015b86; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #015b86; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec url(http://www.uwo.ca/web_standards/img/images/ui-bg_inset-soft_95_fef1ec_1x100.png) 50% bottom repeat-x; color: #cd0a0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { width: 16px; height: 16px; background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_4f2683_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_4f2683_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_015b86_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_028feb_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_028feb_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_028feb_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(http://www.uwo.ca/web_standards/img/images/ui-icons_cd0a0a_256x240.png); }
+
+/* positioning */
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-off { background-position: -96px -144px; }
+.ui-icon-radio-on { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; -khtml-border-top-left-radius: 0px; border-top-left-radius: 0px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px; -khtml-border-top-right-radius: 0px; border-top-right-radius: 0px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; -khtml-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px; -khtml-border-bottom-right-radius: 0px; border-bottom-right-radius: 0px; }
+
+/* Overlays */
+.ui-widget-overlay { background: #aaaaaa url(http://www.uwo.ca/web_standards/img/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(http://www.uwo.ca/web_standards/img/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }/*!
+ * jQuery UI Resizable 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*!
+ * jQuery UI Selectable 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+.ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+/*!
+ * jQuery UI Accordion 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+.ui-accordion { width: 100%; padding-bottom: 20px; }
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+.ui-accordion .ui-accordion-content-active { display: block; }
+.ui-accordion .ui-accordion-content a {color: #015b86;text-decoration: none;}
+.ui-accordion .ui-accordion-content a:hover { color:#029feb;}
+/*!
+ * jQuery UI Autocomplete 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+.ui-autocomplete { position: absolute; cursor: default; }   
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/*
+ * jQuery UI Menu 1.8.21
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+.ui-menu {
+    list-style:none;
+    padding: 2px;
+    margin: 0;
+    display:block;
+    float: left;
+}
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+    margin:0;
+    padding: 0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.ui-menu .ui-menu-item a {
+    text-decoration:none;
+    display:block;
+    padding:.2em .4em;
+    line-height:1.5;
+    zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -1px;
+}
+/*!
+ * jQuery UI Button 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+
+/*button text element */
+.ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.ui-button-text-only .ui-button-text { padding: .4em 1em; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.ui-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+
+/*button sets*/
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+/*!
+ * jQuery UI Dialog 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+.ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
+.ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative;  }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .1em 0; } 
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+/*!
+ * jQuery UI Slider 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }/*!
+ * jQuery UI Tabs 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+/*!
+ * jQuery UI Datepicker 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:2px; }
+.ui-datepicker .ui-datepicker-next { right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}/*!
+ * jQuery UI Progressbar 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Progressbar#theming
+ */
+.ui-progressbar { height:2em; text-align: left; overflow: hidden; }
+.ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }
+
+/*
+ * Timepicker stylesheet
+ * Highly inspired from datepicker
+ * FG - Nov 2010 - Web3R 
+ *
+ * version 0.0.3 : Fixed some settings, more dynamic
+ * version 0.0.4 : Removed width:100% on tables
+ * version 0.1.1 : set width 0 on tables to fix an ie6 bug
+ */
+
+.ui-timepicker-inline { display: inline; }
+
+#ui-timepicker-div { padding: 0.2em; background-color: #fff; }
+.ui-timepicker-table { display: inline-table; width: 0; }
+.ui-timepicker-table table { margin:0.15em 0 0 0; border-collapse: collapse; }
+
+.ui-timepicker-hours, .ui-timepicker-minutes { padding: 0.2em;  }
+
+.ui-timepicker-table .ui-timepicker-title { line-height: 1.8em; text-align: center; }
+.ui-timepicker-table td { padding: 0.1em; width: 2.2em; }
+.ui-timepicker-table th.periods { padding: 0.1em; width: 2.2em; }
+
+/* span for disabled cells */
+.ui-timepicker-table td span {
+    display:block;
+    padding:0.2em 0.3em 0.2em 0.5em;
+    width: 1.2em;
+
+    text-align:right;
+    text-decoration:none;
+}
+/* anchors for clickable cells */
+.ui-timepicker-table td a {
+    display:block;
+    padding:0.2em 0.3em 0.2em 0.5em;
+    width: 1.2em;
+    cursor: pointer;
+    text-align:right;
+    text-decoration:none;
+}
+
+
+/* buttons and button pane styling */
+.ui-timepicker .ui-timepicker-buttonpane {
+    background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0;
+}
+.ui-timepicker .ui-timepicker-buttonpane button { margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+/* The close button */
+.ui-timepicker .ui-timepicker-close { float: right }
+
+/* the now button */
+.ui-timepicker .ui-timepicker-now { float: left; }
+
+/* the deselect button */
+.ui-timepicker .ui-timepicker-deselect { float: left; }
+
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-timepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+
+    
+/************ FEEDBACK *************/
+
+.feedback{
+    position:fixed;
+    right:-481px;
+    top: 220px;
+    display: inline;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.feedback a.open {
+    display: block;
+    height:128px;
+    width:33px;
+    float:left;
+    cursor:pointer;
+    background-image: url(http://www.uwo.ca/web_standards/img/feedback_btn.gif);
+    background-repeat: none;
+    margin-top: 15px;
+}
+
+.close {
+    float:right;
+    display:inline-block;
+    margin-right:65px;
+    cursor: pointer;        
+}
+
+.feedback .form{
+    clear:both;
+    height:250px;
+    width: 450px;
+    border:1px solid #dcdcdc;
+    border-right: none;
+    background:#fff;
+    display: inline-block;
+    padding: 15px;
+}
+.feedback .form textarea{
+    height:115px;
+    width:372px;
+    padding:5px;
+}
+.feedback .status{
+    font-size:16px;
+}
+
+.feedback h2 {
+    display:inline-block;
+}
+
+.placeholder {
+    color: #666666;
+}
+
+.credit {
+    font-size: 9px;
+    float: right;
+    color: #ccc;
+    margin: 2px 5px 2px 5px;
+}
+
+
+.pdf {
+    list-style-image: url(http://www.uwo.ca/web_standards/img/icn/pdf-icon.png); 
+}
+
+.lock {
+    list-style-image: url(http://www.uwo.ca/web_standards/img/icn/lock-icon.png);
+}
+
+.word {
+    list-style-image: url(http://www.uwo.ca/web_standards/img/icn/word-icon.png);
+}
+
+#feed p {
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+#feed h3 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+.inputlist input {
+    display: block;
+    width: 4%;
+    float:left;
+}
+.inputlist p{
+    display: block;
+    float: left;
+    width:94%;
+    margin-bottom: 0px;
+}
+
+.arrow-list li{
+    background: url("http://www.uwo.ca/web_standards/img/icn/paper-transp.png") no-repeat scroll 2px 8px transparent;
+    margin: 0;
+    padding: 5px 0;
+    padding-left: 15px;
+    padding-right: 10px;
+    line-height:21px;
+}
+
+p.intro-paragraph {
+    margin-top:14px;
+    font-size: 120%;    
+}
+
+tbody {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #dcdcdc;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+tr {
+    border: 1px solid #ccc;
+}
+
+table.no-borders tbody {
+    border: none
+}
+
+table.no-borders th {
+    background: #dcdcdc;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+table.no-borders tr {
+    border: none;
+}
+
+table.no-borders td {
+    border: none;
+    padding: 5px;
+}
+
+
+.obscure {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.menu-image {
+    width:210px;
+    height:145px;
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    }
+
+.research-menu-image {
+    float:left;
+    margin-right:10px;
+    margin-top:10px;
+    width:210px;
+    height:145px;
+    padding-bottom: 13px;
+    background-image: url(http://www.uwo.ca/web_standards/img/bkg/shadowcorner.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    }
